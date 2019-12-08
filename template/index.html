@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
+    <title>Revenue Predictor</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css", rel = "stylesheet">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="serialize_json.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body>
+<div class="container contact-form">
+            <div class="contact-image">
+                <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/>
+            </div>
+            <form method="post" name="myform" id="myform">
+                <h3>Hotel Revenue Predictor</h3>
+               <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="date" name="OpenDays" class="form-control" placeholder="First Number" value="" />
+                         </div>
+                         <div class="form-group">
+                                <select id="CityGroup" class="form-control" name="CityGroup">
+                                  <option value="" disabled selected>City Group</option>
+                                  <option value = "BigCity" >"BigCity</option>
+                                  <option  value = "Other">Other</option>
+                                </select>
+                        </div>
+                        <div class="form-group">
+                                <select id="RestaurantType" class="form-control" name="RestaurantType">
+                                  <option value="" disabled selected>Restaurant Type</option>
+                                  <option value = "DT" >DT</option>
+                                  <option  value = "FC">FC</option>
+                                  <option  value = "IL">IL</option>
+                                </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" name="Population" class="form-control" placeholder="Population" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="number" name="Population_below_30" class="form-control" placeholder="% Population Below 30" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="number" name="Gender Ratio" class="form-control" placeholder="Gender Ratio" value=""min="0" max="5" />
+                        </div>
+                        <div class="form-group">
+                                <input type="number" name="Development Index" class="form-control" placeholder="Development Index" value="" min="0" max="5" />
+                        </div>
+                        <div class="form-group">
+                                <input type="number" name="Area" class="form-control" placeholder="Area" value="" />
+                        </div>
+                        <div class="form-group">
+                                <input type="number" name="CarParkArea" class="form-control" placeholder="CarParkArea" value="" min="0" max="10"/>
+                        </div>
+                        <div class="form-group">
+                                <input type="number" name="No_of_points_of_interest_nearby" class="form-control" placeholder="No. of points of interest nearby" value="" min="0" max="10" />
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" name="btnSubmit" class="btnContact" value="Send Data" id="submitform"/>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <textarea name="txtMsg" id="res" class="form-control" placeholder="Predicted Revenue" style="width: 100%; height: 150px;"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
