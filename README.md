@@ -1,5 +1,12 @@
 # Restaurant revenue predictor
 
+[![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
+
+# About
+
+A project for Predicting Revene earned by  Restaurants in upcoming years based on the dataset of previous. An intutive dashboard is also provided in which the retaurant owners can manipulate input paramaters.
+
 ## Get Started
 
 1. Clone this repo into your local machine
